@@ -19,10 +19,10 @@ defmodule Plugsnag.Mixfile do
   end
 
   def application do
-    [applications: []]
+    [applications: [:bugsnag]]
   end
 
   defp deps do
-    [{:bugsnag, "~> 1.0"}]
+    [{:bugsnag, github: "robertg/bugsnag-elixir"}]
   end
 end
